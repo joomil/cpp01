@@ -27,5 +27,8 @@ $(TARGET): $(OBJ)
 clean:
 	$(RM) $(TARGET) $(OBJ)
 
+fclean: clean
+	rm -f $(TARGET)
+	
 # Phony target for clean
 .PHONY: all clean

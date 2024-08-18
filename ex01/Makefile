@@ -24,6 +24,9 @@ $(TARGET): $(OBJS)
 clean:
 	rm -f $(OBJS) $(TARGET)
 
+fclean: clean
+	rm -f $(TARGET)
+	
 # Rule to run the program
 run: $(TARGET)
 	./$(TARGET)
